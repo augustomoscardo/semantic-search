@@ -83,3 +83,11 @@
   flex-direction: column;
   gap: 5px;
 }
+
+.loading-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 15px;
+}

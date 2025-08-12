@@ -22,8 +22,8 @@ fs.createReadStream("mpst_full_data.csv")
 	.on('end', async () => {
 		let startIdx = 0;
 
-		while (startIdx < ids.length) {
-			let endIdx = startIdx + 500; // ajustar essa quantidade de acordo com o seu hardware, quanto maior o valor, maior o processamento necessário
+		while (startIdx < 5) {
+			let endIdx = startIdx + 5; // ajustar essa quantidade de acordo com o seu hardware, quanto maior o valor, maior o processamento necessário
 			console.log(`Adding documents from ${startIdx} to ${endIdx}`)
 
 			await collection.add({
